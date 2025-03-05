@@ -7,8 +7,8 @@ function Social() {
     <div className=" fixed bottom-16 left-1/2 -translate-x-1/2 z-20">
       <Dock direction="middle" magnification={80}>
         <DockIcon>
-          <a href="https://github.com/ganesh-1975" target="_blank">
-            <Icons.gitHub className="size-6" />
+          <a href="https://www.instagram.com/a4g.in/" target="_blank">
+            <Icons.instagram className="size-6" />
           </a>
         </DockIcon>
         {/* <DockIcon>
@@ -23,7 +23,7 @@ function Social() {
           </a>
         </DockIcon>
         <DockIcon>
-          <a target="_blank" href="https://linkedin.com/in/ganesh-profile">
+          <a target="_blank" href="https://www.linkedin.com/company/art4gram/">
             <Icons.linkedin className="size-6" />
           </a>
         </DockIcon>
