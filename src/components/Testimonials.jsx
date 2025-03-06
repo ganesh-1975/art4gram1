@@ -5,6 +5,7 @@ function Testimonials() {
   let items = [
     {
       name: "Aurora",
+      rating: 1,
       role: "Software Engineer",
       feedback:
         "Great experience! The product exceeded my expectations and the customer support was fantastic.",
@@ -13,6 +14,7 @@ function Testimonials() {
     },
     {
       name: "Priya Verma",
+      rating: 2,
       role: "Digital Marketer",
       feedback:
         "Very user-friendly and well-designed. Helped me streamline my marketing campaigns effortlessly.",
@@ -22,6 +24,7 @@ function Testimonials() {
 
     {
       name: "Sara Khan",
+      rating: 3,
       role: "Graphic Designer",
       feedback:
         "Loved the UI/UX design! Very intuitive and easy to use. Would highly recommend it to my peers.",
@@ -30,6 +33,7 @@ function Testimonials() {
     },
     {
       name: "Vikram Reddy",
+      rating: 5,
       role: "Financial Analyst",
       feedback:
         "A well-thought-out solution that helped me analyze data more efficiently. Great value for money!",
@@ -51,6 +55,7 @@ function Testimonials() {
               role={item.role}
               feedback={item.feedback}
               pic={item.picture}
+              rating={item.rating}
             />
           ))}
         </div>
