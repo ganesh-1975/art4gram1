@@ -28,7 +28,7 @@ function Social() {
           </a>
         </DockIcon>
         <DockIcon>
-          <a href="mailto:ganeshravi1975@gmail.com " target="_blank">
+          <a href="mailto:art4gram@gmail.com " target="_blank">
             <Icons.email className="size-6" />
           </a>
         </DockIcon>

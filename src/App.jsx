@@ -1,19 +1,18 @@
-import Footer from "./components/Footer";
-import Landing from "./components/Landing";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import Social from "./components/Social";
-import Testimonials from "./components/Testimonials";
+import MainPage from "./Pages/MainPage";
+import AboutUs from "./Pages/AboutUs";
+import Error from "./Pages/Error";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "@/components/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Landing />
-      <Services />
-      <Testimonials />
-      <Social />
-      <Footer />
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
     </>
   );
 }

@@ -1,21 +1,37 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
+
+  const handleScroll = (section) => {
+    if (location.pathname === "/") {
+      const targetSection = document.getElementById(section);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
   return (
     <>
       <div className=" hidden md:flex justify-between items-center py-2 px-4 ">
         <img src={logo} alt="LOGO" height="100" width="100" />
         <ul className="flex gap-6 text-lg">
           <li>
-            <a href="">About us</a>
+            <Link to="/about">About us</Link>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <Link to="/" onClick={() => handleScroll("services")}>
+              Services
+            </Link>
           </li>
           <li>
-            <a href="#clients">Our Clients</a>
+            <Link to="/" onClick={() => handleScroll("clients")}>
+              {" "}
+              Our Clients
+            </Link>
           </li>
         </ul>
         <motion.div
