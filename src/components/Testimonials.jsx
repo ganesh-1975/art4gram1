@@ -48,7 +48,7 @@ function Testimonials() {
         <h1 className="font-black text-4xl text-center mb-10">
           Trusted by our <span className="font-medium italic">clients</span>
         </h1>
-        <div className="flex md:justify-between justify-center items-center flex-wrap gap-4">
+        <div className="flex md:justify-center lg:justify-between justify-center items-center flex-wrap gap-4">
           {items.map((item) => (
             <TestimonialCard
               name={item.name}

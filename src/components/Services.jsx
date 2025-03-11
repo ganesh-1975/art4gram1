@@ -25,7 +25,7 @@ function Services() {
         <h1 className="font-medium italic text-4xl text-center mb-10">
           Our Digital Services
         </h1>
-        <div className="flex justify-between flex-wrap gap-4">
+        <div className="flex justify-center md:justify-between flex-wrap gap-4">
           {items.map((item) => (
             <ServiceCard img={item.img} title={item.title} desc={item.desc} />
           ))}

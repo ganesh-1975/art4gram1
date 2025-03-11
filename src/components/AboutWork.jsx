@@ -15,7 +15,7 @@ export default function AboutWork() {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="w-[640px] p-6 bg-neutral-950 rounded-lg shadow-2xl backdrop-blur-md"
+        className="w-[640px] p-6 bg-neutral-950 rounded-lg shadow-2xl backdrop-blur-md text-justify"
       >
         <h1 className="text-3xl font-bold text-white mb-6">What We Do?</h1>
         <ul className="text-lg text-neutral-300 space-y-4">
